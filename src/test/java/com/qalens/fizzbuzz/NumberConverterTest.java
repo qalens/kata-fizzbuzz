@@ -23,4 +23,10 @@ public class NumberConverterTest {
         final NumberConverter converter = new NumberConverter(number);
         Assertions.assertEquals(toString,converter.toString());
     }
+    @ParameterizedTest
+    @CsvSource({"15,FizzBuzz", "30,FizzBuzz","90,FizzBuzz"})
+    public void shouldConvertNumberToFizzBuzzWhenDivisibleBy15(int number,String toString){
+        final NumberConverter converter = new NumberConverter(number);
+        Assertions.assertEquals(toString,converter.toString());
+    }
 }
