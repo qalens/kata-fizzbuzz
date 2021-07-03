@@ -11,4 +11,10 @@ public class NumberConverterTest {
         final NumberConverter converter = new NumberConverter(number);
         Assertions.assertEquals(converter.toString(),toString);
     }
+    @ParameterizedTest
+    @CsvSource({"3,Fizz", "99,Fizz"})
+    public void shouldConvertNumberToFizzWhenDivisibleBy3(int number,String toString){
+        final NumberConverter converter = new NumberConverter(number);
+        Assertions.assertEquals(converter.toString(),toString);
+    }
 }
