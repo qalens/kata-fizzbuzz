@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class NumberConverter {
     private static Supplier<Stream<SpeakingNumber>> streamSupplier
-            = () -> Stream.of(new SpeakingNumber(3,"Fizz"),new SpeakingNumber(5,"Buzz"));
+            = () -> Stream.of(new SpeakingNumber(15,"FizzBuzz"),new SpeakingNumber(3,"Fizz"),new SpeakingNumber(5,"Buzz"));
     static class SpeakingNumber{
         int number;
         String word;
