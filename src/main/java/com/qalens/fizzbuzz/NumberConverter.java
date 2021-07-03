@@ -8,6 +8,8 @@ public class NumberConverter {
 
     @Override
     public String toString() {
+        if(number%3==0)
+            return "Fizz";
         return number+"";
     }
 }
