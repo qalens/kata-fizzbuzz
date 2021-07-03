@@ -1,7 +1,4 @@
 package com.qalens.fizzbuzz;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
