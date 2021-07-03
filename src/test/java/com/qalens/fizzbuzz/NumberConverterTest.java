@@ -17,4 +17,10 @@ public class NumberConverterTest {
         final NumberConverter converter = new NumberConverter(number);
         Assertions.assertEquals(converter.toString(),toString);
     }
+    @ParameterizedTest
+    @CsvSource({"5,Buz", "100,Buzz"})
+    public void shouldConvertNumberToBuzzWhenDivisibleBy5(int number,String toString){
+        final NumberConverter converter = new NumberConverter(number);
+        Assertions.assertEquals(converter.toString(),toString);
+    }
 }
